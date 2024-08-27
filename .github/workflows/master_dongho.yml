@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'dongho'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_52B0B982B97E44E89D6ED6023F17364A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B28B4F72DD404CFD94AC5F42592FF719 }}
           package: .
