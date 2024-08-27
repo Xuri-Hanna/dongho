@@ -1,5 +1,5 @@
 <?php
-    include('./backend/connection.php');
+    include('backend/connection.php');
 
     $query = "SELECT * FROM products ORDER BY product_id DESC;";
     $result = $conn->query($query);
