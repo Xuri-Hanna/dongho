@@ -1,5 +1,13 @@
 <?php 
- $con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, NULL, NULL, NULL);
-mysqli_real_connect($conn, "dongho.mysql.database.azure.com", "dongho", "Hieu0411!", "watchshop", 3306, MYSQLI_CLIENT_SSL);
+    $server = "dongho.mysql.database.azure.com";
+    $user = "dongho";
+    $password = "Hieu0411!";
+    $database = "watchshop";
+
+    $conn = new mysqli($server, $user, $password, $database);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 ?>
